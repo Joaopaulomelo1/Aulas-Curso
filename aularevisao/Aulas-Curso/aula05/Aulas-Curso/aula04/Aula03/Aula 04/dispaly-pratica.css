@@ -1,0 +1,28 @@
+.bloco {
+    display: block;
+    background-color: red;
+}
+
+.linha {
+    display: inline;
+    background-color: aquamarine;
+}
+
+
+.linha-bloco {
+    background-color: blueviolet;
+    display: inline-block;
+    color: white;
+}
+
+
+.vazio {
+    background-color: burlywood;
+    visibility: hidden;
+}
+
+.static {
+    background-color: pink;
+    padding: 20px;
+    position: static;
+}

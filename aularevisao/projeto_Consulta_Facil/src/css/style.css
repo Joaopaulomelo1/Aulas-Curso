@@ -1,0 +1,120 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+
+body {
+  background-color: #f0f4f8; /* use o código hexadecimal, RGB, HSL ou nome da cor */
+  color: #333; /* ajusta a cor padrão do texto para melhor contraste */
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.banner-img-wrapper {
+  position: relative;
+  width: 100vw;
+  height: 250px;
+  overflow: hidden;
+}
+.banner-img-wrapper img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: auto;
+  height: 100%;
+  min-width: 100%;
+  transform: translateX(-50%);
+  object-fit: cover;
+}
+.banner-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  text-align: center;
+  text-shadow: 0 0 5px rgba(0, 0, 0, 0.7);
+}
+
+.logo img {
+  height: 80px;
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto auto;
+  gap: 1.5rem;
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 0 1rem;
+}
+
+.section-container,
+section {
+  background: #f9f9f9;
+  border-radius: 8px;
+  overflow: hidden;
+  text-align: center;
+}
+.section-body {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+}
+.section-body i {
+  padding-top: 20px;
+}
+.img {
+  width: 100%;
+  max-width: 300px;
+  height: auto;
+}
+
+.fundo-container{
+  height: 60vh;
+}
+.fundo{
+  position: absolute;
+  width: 100%;
+  object-fit: cover;
+}
+.menu{
+      display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    padding: 20px;
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+    top: 0;
+  }
+
+.nav-lista{
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  list-style: none;
+}
+
+/* Responsividade mobile */
+@media (max-width: 768px) {
+  .container {
+    grid-template-columns: 1fr;
+  }
+  .section-body {
+    flex-direction: column;
+    padding: 20px;
+  }
+}

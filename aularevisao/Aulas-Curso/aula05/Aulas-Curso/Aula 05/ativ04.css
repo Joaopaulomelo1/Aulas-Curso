@@ -1,0 +1,22 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+
+.container {
+    background-color: red;
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 20px;
+    align-items: center;
+}
+
+img {
+    background-color: aquamarine;
+    width: 200px;
+  
+    border: solid 3px aqua;
+ 
+}
